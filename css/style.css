@@ -10,6 +10,10 @@
     text-transform: uppercase;
 }
 
+.txt-white {
+    color: white;
+}
+
 .f-size-2rem {
     font-size: 2rem;
 }
@@ -18,8 +22,24 @@
     padding: 1rem;
 }
 
+.pad-point5rem-1rem {
+    padding: .5rem 1rem;
+}
+
+.pad-0-1rem {
+    padding: 0 1rem;
+}
+
 .mar-rig-2rem {
     margin-right: 2rem;
+}
+
+.mar-bot-2rem {
+    margin-bottom: 2rem;
+}
+
+.mar-bot-point5rem {
+    margin-bottom: .5rem;
 }
 
 .rounded {
@@ -38,7 +58,7 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 li {
@@ -54,7 +74,15 @@ i,
     width: 200px;
     height: calc(100vh - 80px);
     background-color: black;
-    color: white;
+    color: #6c6c6c;
+}
+
+#sidebar-section img.user-icon {
+    width: 25px;
+    aspect-ratio: 1;
+    background-color: grey;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 #sidebar-section .large-navbar .logo {
@@ -66,12 +94,34 @@ i,
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    font-weight: bold;
 }
 
 #sidebar-section .large-navbar li {
-    margin: 1rem 0;
+    margin: .8rem 0;
     cursor: pointer;
+    width: fit-content;
+    height: 100%;
+    padding: 0 1rem;
+    border-left: 3px solid black;
+}
+
+
+#sidebar-section .large-navbar li.bor-left-lightgreen {
+    border-left: 3px solid #b5ff31;
+}
+
+#sidebar-section .large-navbar li img {
+    width: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#sidebar-section .large-navbar li i {
+    font-size: 40px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: .5rem;
 }
 
 #sidebar-section .small-navbar {
