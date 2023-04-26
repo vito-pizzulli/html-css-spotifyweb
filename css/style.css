@@ -30,15 +30,11 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
+    font-size: .8rem;
 }
 
 li {
     list-style-type: none;
-}
-
-#logo {
-    margin: 1rem;
-    width: 150px;
 }
 
 #sidebar-section {
@@ -48,15 +44,41 @@ li {
     color: white;
 }
 
-#sidebar-section nav {
+#sidebar-section .large-navbar .logo {
+    margin: 1rem;
+    width: 150px;
+}
+
+#sidebar-section .large-navbar {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#sidebar-section li {
+#sidebar-section .large-navbar li {
     margin: .5rem;
+}
+
+#sidebar-section .small-navbar {
+    height: 100%;
+    justify-content: space-between;
+    display: none;
+}
+
+#sidebar-section .small-navbar > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar-section .small-navbar li img {
+    margin: 1rem;
+    width: 30px;
+}
+
+#sidebar-section .small-navbar i {
+    font-size: 15px;
 }
 
 #content-section {
@@ -135,5 +157,16 @@ li {
 
 /* XS Layout (from 0px to 576px) */
 @media screen and (max-width: 576px) {
-    
+    #sidebar-section {
+        width: 50px;
+    }
+
+    #sidebar-section .large-navbar {
+        display: none;
+    }
+
+    #sidebar-section .small-navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
