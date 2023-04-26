@@ -10,6 +10,10 @@
     text-transform: uppercase;
 }
 
+.pad-1rem {
+    padding: 1rem;
+}
+
 /* Element Properties */
 html {
     scroll-behavior: smooth;
@@ -47,6 +51,10 @@ li {
     justify-content: space-between;
 }
 
+#sidebar-section li {
+    margin: .5rem;
+}
+
 #content-section {
     width: calc(100% - 200px);
     height: calc(100vh - 80px);
@@ -54,25 +62,42 @@ li {
     color: white;
 }
 
-.upgrade-bar {
+#content-section .upgrade-bar {
     background-color: #080b12;
     padding: 1rem 0;
     display: flex;
     justify-content: flex-end;
 }
 
-.selection-bar ul {
+#content-section .upgrade-bar button {
+    padding: .4rem 1rem;
+    border-radius: 50px;
+}
+
+#content-section .selection-bar ul {
     display: flex;
     justify-content: center;
 }
 
-.selection-bar li {
+#content-section .selection-bar li {
     margin: 1rem;
 }
 
-.upgrade-bar button {
-    padding: .4rem 1rem;
-    border-radius: 50px;
+#content-section .element-row {
+    display: flex;
+}
+
+#content-section .element-row .element {
+    width: calc(100% / 6);
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content-section .element-row .element img {
+    width: 100%;
+    aspect-ratio: 1;
 }
 
 #player-section {
