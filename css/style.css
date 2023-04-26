@@ -16,12 +16,16 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
 }
 
 #logo {
@@ -55,6 +59,15 @@ main {
     padding: 1rem 0;
     display: flex;
     justify-content: flex-end;
+}
+
+.selection-bar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.selection-bar li {
+    margin: 1rem;
 }
 
 .upgrade-bar button {
