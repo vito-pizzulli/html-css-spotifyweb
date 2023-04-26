@@ -10,8 +10,16 @@
     text-transform: uppercase;
 }
 
+.f-size-30px {
+    font-size: 30px;
+}
+
 .pad-1rem {
     padding: 1rem;
+}
+
+.mar-rig-2rem {
+    margin-right: 2rem;
 }
 
 .rounded {
@@ -37,6 +45,11 @@ li {
     list-style-type: none;
 }
 
+i,
+#sidebar-section .large-navbar span{
+    cursor: pointer;
+}
+
 #sidebar-section {
     width: 200px;
     height: calc(100vh - 80px);
@@ -45,7 +58,6 @@ li {
 }
 
 #sidebar-section .large-navbar .logo {
-    margin: 1rem;
     width: 150px;
 }
 
@@ -54,10 +66,12 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 #sidebar-section .large-navbar li {
-    margin: .5rem;
+    margin: 1rem 0;
+    cursor: pointer;
 }
 
 #sidebar-section .small-navbar {
@@ -75,10 +89,7 @@ li {
 #sidebar-section .small-navbar li img {
     margin: 1rem;
     width: 30px;
-}
-
-#sidebar-section .small-navbar i {
-    font-size: 15px;
+    cursor: pointer;
 }
 
 #content-section {
@@ -109,6 +120,7 @@ li {
 
 #content-section .selection-bar li {
     margin: 1rem;
+    cursor: pointer;
 }
 
 #content-section .element-row {
@@ -136,6 +148,39 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+}
+
+#player-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player-section li {
+    margin-right: 1rem;
+}
+
+#player-section img {
+    width: 40px;
+}
+
+/* #player-section i {
+    font-size: 15px;
+} */
+
+#player-section .thin-bar {
+    background-color: #5d5d5d;
+    height: 4px;
+    border-radius: 20px;
+}
+
+#player-section .thin-bar.long {
+    width: 500px;
+}
+
+#player-section .thin-bar.short {
+    width: 100px;
 }
 
 /* Responsive Layout */
@@ -147,12 +192,14 @@ li {
 
     #content-section .element-row .element {
         width: calc((100% / 4) - 1rem);
+    }
 }
 
 /* S Layout (from 576px to 768px) */
 @media screen and (max-width: 768px) {
     #content-section .element-row .element {
         width: calc((100% / 2) - 1rem);
+    }
 }
 
 /* XS Layout (from 0px to 576px) */
@@ -169,4 +216,9 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #content-section {
+        width: calc(100% - 50px);
+    }
 }
