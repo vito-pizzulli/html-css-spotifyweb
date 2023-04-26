@@ -61,6 +61,22 @@ main {
     font-size: .7rem;
 }
 
+h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    font-size: .6rem;
+    color: #85878c;
+    margin-bottom: .5rem;
+}
+
 li {
     list-style-type: none;
 }
@@ -80,7 +96,7 @@ i,
 #sidebar-section img.user-icon {
     width: 25px;
     aspect-ratio: 1;
-    background-color: grey;
+    background-color: #9f9f9f;
     border-radius: 50%;
     vertical-align: middle;
 }
@@ -199,6 +215,7 @@ i,
 
 #content-section .element-row .element img {
     width: 100%;
+    margin-bottom: .5rem;
 }
 
 #player-section {
