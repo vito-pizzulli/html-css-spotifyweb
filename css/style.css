@@ -33,3 +33,19 @@
 .wrap {
     flex-wrap: wrap;
 }
+
+/* Responsive Layout */
+/* MD Layout (from 768px to 992px) */
+@media screen and (max-width: 992px) {
+
+}
+
+/* S Layout (from 576px to 768px) */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* XS Layout (from 0px to 576px) */
+@media screen and (max-width: 576px) {
+    
+}
