@@ -10,8 +10,8 @@
     text-transform: uppercase;
 }
 
-.f-size-30px {
-    font-size: 30px;
+.f-size-2rem {
+    font-size: 2rem;
 }
 
 .pad-1rem {
@@ -165,9 +165,9 @@ i,
     width: 40px;
 }
 
-/* #player-section i {
-    font-size: 15px;
-} */
+#player-section span {
+    font-size: .6rem;
+}
 
 #player-section .thin-bar {
     background-color: #5d5d5d;
@@ -176,7 +176,7 @@ i,
 }
 
 #player-section .thin-bar.long {
-    width: 500px;
+    width: 25vw;
 }
 
 #player-section .thin-bar.short {
@@ -199,6 +199,18 @@ i,
 @media screen and (max-width: 768px) {
     #content-section .element-row .element {
         width: calc((100% / 2) - 1rem);
+    }
+
+    #player-section {
+        padding: .5rem;
+    }
+
+    #player-section .thin-bar.long {
+        width: 20vw;
+    }
+
+    #player-section .thin-bar.short {
+        width: 70px;
     }
 }
 
