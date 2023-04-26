@@ -5,33 +5,9 @@
     box-sizing: border-box;
 }
 
-/* Flexbox Properties */
-.flex {
-    display: flex;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.justify-content-space-between {
-    justify-content: space-between;
-}
-
-.justify-content-space-around {
-    justify-content: space-around;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.direction-column {
-    flex-direction: column;
-}
-
-.wrap {
-    flex-wrap: wrap;
+/* Utility Properties */
+.txt-uppercase {
+    text-transform: uppercase;
 }
 
 /* Element Properties */
@@ -72,6 +48,18 @@ main {
     height: calc(100vh - 80px);
     background-color: #141922;
     color: white;
+}
+
+.upgrade-bar {
+    background-color: #080b12;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upgrade-bar button {
+    padding: .4rem 1rem;
+    border-radius: 50px;
 }
 
 #player-section {
