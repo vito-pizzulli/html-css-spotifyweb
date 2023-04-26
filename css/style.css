@@ -126,7 +126,6 @@ i,
 
 #sidebar-section .small-navbar {
     height: 100%;
-    justify-content: space-between;
     display: none;
 }
 
@@ -158,8 +157,13 @@ i,
 }
 
 #content-section .upgrade-bar button {
-    padding: .4rem 1rem;
+    padding: .4rem 2rem;
+    margin-right: 1rem;
     border-radius: 50px;
+    background-color: transparent;
+    font-size: .6rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #content-section .selection-bar ul {
@@ -277,7 +281,8 @@ i,
     #sidebar-section .small-navbar {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;  
+        justify-content: space-between;
     }
 
     #content-section {
