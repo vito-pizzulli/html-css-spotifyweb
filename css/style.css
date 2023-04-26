@@ -170,11 +170,21 @@ i,
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    color: #7d7f84;
+    font-weight: bold;
 }
 
 #content-section .selection-bar li {
     margin: 1rem;
     cursor: pointer;
+    font-size: .7rem;
+}
+
+#content-section .selection-bar .thin-bar-green {
+    background-color: #b5ff31;
+    height: 2px;
+    width: 30px;
+    margin: .1rem auto;
 }
 
 #content-section .element-row {
