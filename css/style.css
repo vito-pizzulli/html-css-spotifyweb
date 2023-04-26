@@ -82,6 +82,7 @@ li {
 #content-section .selection-bar ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #content-section .selection-bar li {
@@ -118,12 +119,18 @@ li {
 /* Responsive Layout */
 /* MD Layout (from 768px to 992px) */
 @media screen and (max-width: 992px) {
+    #content-section .element-row {
+        flex-wrap: wrap;
+    }
 
+    #content-section .element-row .element {
+        width: calc((100% / 4) - 1rem);
 }
 
 /* S Layout (from 576px to 768px) */
 @media screen and (max-width: 768px) {
-    
+    #content-section .element-row .element {
+        width: calc((100% / 2) - 1rem);
 }
 
 /* XS Layout (from 0px to 576px) */
