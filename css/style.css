@@ -460,6 +460,15 @@ span {
     #content-section .element-row .element {
         width: calc((100% / 4) - 1rem);
     }
+
+    #sidebar-section .large-navbar li {
+        border-left: 5px solid black;
+    }
+    
+    #sidebar-section .large-navbar ul.mar-bot-2rem li:not(:first-child):hover {
+        border-left: 5px solid #b5ff31;
+    }
+    
 }
 
 /* S Layout (from 576px to 768px) */
