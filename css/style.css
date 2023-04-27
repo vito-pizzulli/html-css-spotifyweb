@@ -98,7 +98,7 @@ span:hover {
 }
 
 i,
-#sidebar-section .large-navbar span {
+span {
     cursor: pointer;
 }
 
