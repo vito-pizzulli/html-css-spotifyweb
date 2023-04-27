@@ -200,11 +200,12 @@ span {
     font-size: .6rem;
     font-weight: bold;
     cursor: pointer;
-    transition: transform .2s;
+    transition: transform .2s, border-color .2s;
 }
 
 #content-section .upgrade-bar button:hover {
     transform: scale(1.2);
+    border-color: #b5ff31;
 }
 
 #content-section .selection-bar ul {
@@ -297,10 +298,21 @@ span {
 
 #player-section span {
     font-size: .7rem;
+    color: #9f9f9f;
+}
+
+#player-section span:first-of-type {
+    color: white;
+}
+
+#player-section span:nth-of-type(2):hover {
+    color: white;
+    text-decoration: underline;
 }
 
 #player-section i {
     font-size: .9rem;
+    transition: color .3s;
 }
 
 #player-section i.fa-heart,
@@ -308,22 +320,20 @@ span {
     color: #7c7e83;
 }
 
-#player-section i.fa-circle-play {
-    font-size: 2rem;
+#player-section i:hover {
+    color: white;
 }
 
 #player-section div span:first-of-type {
     font-weight: bold;
 }
 
-#player-section .player-buttons {
-    margin-bottom: .5rem;
-}
-
 #player-section .thin-bar {
     background-color: #5d5d5d;
     height: 4px;
     border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .2s;
 }
 
 #player-section .thin-bar.long {
@@ -334,17 +344,58 @@ span {
     width: 100px;
 }
 
-#player-section .thin-bar.shorter {
+#player-section .dot {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+#player-section .player-buttons i,
+#player-section .player-settings i {
+    transition: transform .3s;
+}
+
+#player-section .player-buttons i:hover,
+#player-section .player-settings i:hover {
+    transform: scale(1.2);
+}
+
+#player-section .player-buttons i.fa-circle-play {
+    font-size: 2rem;
+}
+
+#player-section .player-buttons {
+    margin-bottom: .5rem;
+}
+
+#player-section .player-progression-bar .thin-bar.short {
+    background-color: #c1c1c1;
+    position: absolute;
+    top: 0;
+}
+
+#player-section .player-settings .thin-bar.shorter {
     width: 25px;
     background-color: #c1c1c1;
     position: absolute;
     top: 0;
 }
 
-#player-section .thin-bar.long + .thin-bar.short {
-    background-color: #c1c1c1;
-    position: absolute;
-    top: 0;
+#player-section .player-progression-bar .thin-bar.short:hover,
+#player-section .player-settings .thin-bar.shorter:hover {
+    background-color: #b5ff31;
+}
+
+#player-section .player-progression-bar .thin-bar.short:hover .dot,
+#player-section .player-settings .thin-bar.shorter:hover .dot {
+    opacity: 1;
 }
 
 /* Responsive Layout */
