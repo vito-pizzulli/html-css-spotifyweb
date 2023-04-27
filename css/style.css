@@ -140,11 +140,11 @@ i,
     height: 100%;
     padding: 0 1rem;
     border-left: 3px solid black;
+    transition: border-left .3s;
 }
 
 #sidebar-section .large-navbar ul.mar-bot-2rem li:not(:first-child):hover {
     border-left: 3px solid #b5ff31;
-    transition: border-left .3s;
 }
 
 #sidebar-section .large-navbar li img {
@@ -194,12 +194,17 @@ i,
 
 #content-section .upgrade-bar button {
     padding: .4rem 2rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     border-radius: 50px;
     background-color: transparent;
     font-size: .6rem;
     font-weight: bold;
     cursor: pointer;
+    transition: transform .2s;
+}
+
+#content-section .upgrade-bar button:hover {
+    transform: scale(1.2);
 }
 
 #content-section .selection-bar ul {
@@ -218,7 +223,6 @@ i,
 
 #content-section .selection-bar li:hover .thin-bar-green {
     opacity: 1;
-    transition: opacity .3s;
 }
 
 #content-section .selection-bar .thin-bar-green {
@@ -227,6 +231,7 @@ i,
     width: 30px;
     margin: .1rem auto;
     opacity: 0;
+    transition: opacity .3s;
 }
 
 #content-section .element-row {
@@ -251,13 +256,13 @@ i,
 
 #content-section .element-row .element:hover i {
     opacity: 1;
-    transition: opacity .3s;
 }
 
 #content-section .element-row .element img {
     width: 100%;
     max-width: 300px;
     margin-bottom: .5rem;
+    transition: opacity .3s;
 }
 
 #content-section .element-row .element:hover img {
