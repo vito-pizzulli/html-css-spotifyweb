@@ -42,6 +42,10 @@
     border-radius: 50%;
 }
 
+.p-relative {
+    position: relative;
+}
+
 /* Element Properties */
 html {
     scroll-behavior: smooth;
@@ -280,6 +284,19 @@ i,
 
 #player-section .thin-bar.short {
     width: 100px;
+}
+
+#player-section .thin-bar.shorter {
+    width: 25px;
+    background-color: #c1c1c1;
+    position: absolute;
+    top: 0;
+}
+
+#player-section .thin-bar.long + .thin-bar.short {
+    background-color: #c1c1c1;
+    position: absolute;
+    top: 0;
 }
 
 /* Responsive Layout */
