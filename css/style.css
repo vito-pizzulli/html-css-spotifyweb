@@ -261,7 +261,6 @@ span {
 
 #content-section .element-row .element img {
     width: 100%;
-    max-width: 300px;
     margin-bottom: .5rem;
     transition: opacity .3s;
 }
@@ -399,6 +398,59 @@ span {
 }
 
 /* Responsive Layout */
+/* 2K and bigger Layout (from 2560px higher) */
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 40px;
+    }
+
+    #sidebar-section {
+        width: 500px;
+        height: calc(100vh - 200px);
+    }
+
+    #sidebar-section .logo {
+        width: 300px !important;
+    }
+
+    #content-section {
+        width: calc(100% - 500px);
+        height: calc(100vh - 200px);
+    }
+
+    #player-section {
+        height: 200px;
+    }
+
+    #player-section span {
+        font-size: 35px;
+    }
+
+    #player-section img {
+        width: 120px;
+    }
+
+    #player-section .thin-bar {
+        height: 15px;
+    }
+
+    #player-section .thin-bar.short {
+        width: 200px !important;
+    }
+
+    #player-section .thin-bar.shorter {
+        width: 80px !important;
+    }
+
+    #player-section .thin-bar .dot {
+        width: 35px;
+    }
+
+    #player-section .player-buttons {
+        transform: scale(1.15);
+    }
+}
+
 /* MD Layout (from 768px to 992px) */
 @media screen and (max-width: 992px) {
     #content-section .element-row {
