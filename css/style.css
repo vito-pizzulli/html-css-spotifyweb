@@ -123,7 +123,13 @@ span {
 
 #sidebar-section .large-navbar .logo {
     width: 150px;
+    opacity: .8;
+    transition: opacity .3s;
 }
+
+#sidebar-section .large-navbar .logo:hover {
+    opacity: 1;
+} 
 
 #sidebar-section .large-navbar {
     height: 100%;
