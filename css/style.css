@@ -14,10 +14,6 @@
     color: white;
 }
 
-.f-size-2rem {
-    font-size: 2rem;
-}
-
 .pad-1rem {
     padding: 1rem;
 }
@@ -233,13 +229,14 @@ i,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 #player-section ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: .5rem;
 }
 
 #player-section li {
@@ -251,7 +248,24 @@ i,
 }
 
 #player-section span {
-    font-size: .6rem;
+    font-size: .7rem;
+}
+
+#player-section i {
+    font-size: .9rem;
+}
+
+#player-section i.fa-heart,
+#player-section i.fa-folder {
+    color: #7c7e83;
+}
+
+#player-section i.fa-circle-play {
+    font-size: 2rem;
+}
+
+#player-section div span:first-of-type {
+    font-weight: bold;
 }
 
 #player-section .thin-bar {
