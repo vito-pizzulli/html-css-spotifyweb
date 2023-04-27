@@ -240,7 +240,6 @@ i,
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: .5rem;
 }
 
 #player-section li {
@@ -249,6 +248,7 @@ i,
 
 #player-section img {
     width: 40px;
+    vertical-align: middle;
 }
 
 #player-section span {
@@ -270,6 +270,10 @@ i,
 
 #player-section div span:first-of-type {
     font-weight: bold;
+}
+
+#player-section .player-buttons {
+    margin-bottom: .5rem;
 }
 
 #player-section .thin-bar {
@@ -349,5 +353,29 @@ i,
 
     #content-section {
         width: calc(100% - 50px);
+    }
+
+    #player-section i {
+        font-size: .7rem;
+    }
+
+    #player-section i.fa-circle-play {
+        font-size: 1.2rem;
+    }
+
+    #player-section img {
+        width: 30px;
+    }
+
+    #player-section span {
+        font-size: .5rem;
+    }
+
+    #player-section .player-settings {
+        flex-wrap: wrap;
+    }
+
+    #player-section .player-settings li.p-relative {
+        margin-top: 1rem;
     }
 }
