@@ -418,6 +418,10 @@ span {
         height: calc(100vh - 200px);
     }
 
+    #content-section .element-row .element i {
+        font-size: 150px;
+    }
+
     #player-section {
         height: 200px;
     }
