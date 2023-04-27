@@ -85,6 +85,16 @@ p {
 
 li {
     list-style-type: none;
+    transition: color .3s;
+}
+
+span {
+    transition: color .3s;
+}
+
+li:hover,
+span:hover {
+    color: white;
 }
 
 i,
