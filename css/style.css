@@ -88,8 +88,12 @@ li {
 }
 
 i,
-#sidebar-section .large-navbar span{
+#sidebar-section .large-navbar span {
     cursor: pointer;
+}
+
+#sidebar-section .large-navbar ul + span {
+    cursor: auto;
 }
 
 #sidebar-section {
@@ -128,7 +132,7 @@ i,
     border-left: 3px solid black;
 }
 
-#sidebar-section .large-navbar li:hover {
+#sidebar-section .large-navbar ul.mar-bot-2rem li:not(:first-child):hover {
     border-left: 3px solid #b5ff31;
     transition: border-left .3s;
 }
