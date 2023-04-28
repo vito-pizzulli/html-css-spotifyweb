@@ -46,6 +46,10 @@
     position: relative;
 }
 
+.d-inline-block {
+    display: inline-block;
+}
+
 /* Element Properties */
 html {
     scroll-behavior: smooth;
@@ -143,7 +147,6 @@ span {
     margin: .8rem 0;
     cursor: pointer;
     width: fit-content;
-    height: 100%;
     padding: 0 1rem;
     border-left: 3px solid black;
     transition: border-left .3s;
@@ -164,6 +167,11 @@ span {
     cursor: pointer;
     vertical-align: middle;
     margin-right: .5rem;
+}
+
+#sidebar-section .large-navbar .playlists {
+    height: 30vh;
+    overflow-y: scroll;
 }
 
 #sidebar-section .small-navbar {
@@ -196,6 +204,9 @@ span {
     padding: 1rem 0;
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    width: calc(100% - 200px);
+    z-index: 1;
 }
 
 #content-section .upgrade-bar button {
@@ -220,6 +231,7 @@ span {
     flex-wrap: wrap;
     color: #7d7f84;
     font-weight: bold;
+    margin-top: 4rem;
 }
 
 #content-section .selection-bar li {
@@ -284,6 +296,7 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    z-index: 1;
 }
 
 #player-section ul {
@@ -424,6 +437,10 @@ span {
         height: calc(100vh - 200px);
     }
 
+    #content-section .upgrade-bar {
+        width: calc(100% - 500px);
+    }
+
     #content-section .element-row .element i {
         font-size: 150px;
     }
@@ -517,7 +534,8 @@ span {
         justify-content: space-between;
     }
 
-    #content-section {
+    #content-section,
+    #content-section .upgrade-bar {
         width: calc(100% - 50px);
     }
 
