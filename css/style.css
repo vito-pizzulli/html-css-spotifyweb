@@ -563,3 +563,23 @@ span {
         margin-top: 1rem;
     }
 }
+
+/* Small Height Layouts (height from 0px to 450px) */
+@media screen and (max-height:450px) {
+    #sidebar-section .large-navbar .playlists {
+        display: none;
+    }
+}
+
+@media screen and (max-height:250px) {
+    #sidebar-section .large-navbar .navbar-bottom {
+        display: none;
+    }
+}
+
+@media screen and (max-height:230px) {
+    #sidebar-section .large-navbar .navbar-top li:not(:first-child),
+    #sidebar-section .large-navbar span {
+        display: none;
+    }
+}
